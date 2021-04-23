@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js" charset="utf-8"></script>
+<title>Arvauspeli</title>
+<body>
+
+  <head>
+    <div>
+    <div id ="otsikko">
+<h1>Arvauspeli</h1>
+</div>
+<div class="kyselylomake" id="kyselylomake">
+  <p> Tavoitteena on arvata oikea luku. Luku on välillä 1-10. </p>
+  <p> Sinulla on kolme arvausta käytössä, jos et arvaa oikein kone voittaa </p>
+</div>
+</div>
+      <form id="lomake" class="yhteys" action="index.html" method="post">
+        <p></p>
+
+        <label for="omatulos">Oma tulos</label>
+        <input type="text" name="omatulos" id="omatulos" value="" size="2">
+        <label for="konetulos">  Kone tulos</label>
+        <input type="text" name="konetulos" id="konetulos" value="" size="2">
+        <br>
+        <input type="button" onclick="uusiPeli()" background-color="green" value="Uusi peli">
+        <br>
+        <label for="numero">Anna numero:</label>
+        <br>
+        <input type="text" id="numero" name="numero" minlength="1" placeholder="Numero (1-10)" size="9" value="" required>
+        <br>
+        <br>
+        <input type="button" onclick="tarkista()" background-color="blue" value="Tarkista numero">
+
+</form>
+
+
+</html>
